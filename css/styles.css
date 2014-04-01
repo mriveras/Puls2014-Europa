@@ -8,6 +8,29 @@ body{
 	font-size: 16px;
 }
 
+footer{
+	background: #22BCE0;
+	color: rgba(255,255,255,0.7);
+	text-align: center;
+	padding: 1em;
+}
+
+footer p:first-child{
+	margin-bottom: 0;
+}
+
+footer p:last-child{
+	margin-top: 0;
+}
+
+footer p:last-child:after{
+	content: " -";
+}
+
+footer p:last-child:before{
+	content: "- ";
+}
+
 header{
 	background: #343B54;
 	color: white;
@@ -82,4 +105,74 @@ nav ul #publicar_nav a{
 	font-style: italic;
 	padding: 0.6em 0.8em;
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+}
+
+#content{
+	margin: 1em;
+}
+
+#content .item{
+	background:white;
+	border-bottom: 3px solid #22BCE0;
+	margin-bottom: 3em;
+	min-height: 100px; 
+	position:relative;
+}
+
+#content .item .autor_item{
+	color: #AAAAAA;
+}
+
+#content .item .data_item{
+	margin: 1em 1em 0 0;
+}
+
+#content .item .data_item .date{
+	color: #AAAAAA;
+	float: right;
+}
+
+#content .item .data_item .tag{
+	background: #F4502A;
+	border-radius: 0.5em;
+	color: white;
+	display: inline-block;
+	padding: 0.2em 0.5em;
+	text-decoration: none;
+}
+
+#content .item .image_item{
+	float:left;
+	margin-right: 1em;
+}
+
+#content .item .image_item img{
+	width: 100px;
+}
+
+#content .item .title_item{
+	font-size: 1.2em;
+	font-style: italic;
+	padding-top: 1em 1em 0 0; 
+}
+
+#content .item .title_item a{
+	color: #444444;
+	text-decoration: none;
+}
+
+#content .item .vote_item{
+	background: white;
+	border-radius: 0 0 0.5em 0.5em;
+	position: absolute;
+	left: 5%;
+	margin-top: 3px;
+	padding: 0.2em 0.5em;
+	top:100%;
+	width: 90%;
+}
+
+#content .item .vote_item .comments,
+#content .item .vote_item .favorite{
+	float: right;
 }
